@@ -1,27 +1,37 @@
-.navbar {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    padding: 1em; /* Espacio entre el contenido y el borde de la barra */
-    text-align: center; /* Alineación del texto en la barra */
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  .navbar ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0; /* Elimina el margen */
-    padding: 0; /* Elimina el relleno */
-    display: flex; /* Convierte la lista en una fila */
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #f2f2f2; /* Color de fondo de la barra */
+    overflow: hidden; /* Oculta cualquier contenido que exceda el ancho */
   }
   
-  .navbar li {
-    margin-right: 20px; /* Espacio entre los elementos de la lista */
+  nav ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Organiza los elementos de la lista en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
   }
   
-  .navbar a {
-    color: #fff; /* Color del texto de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    transition: color 0.2s ease; /* Transición de color al pasar el cursor */
+  nav li {
+    float: left; /* Hace que cada elemento de la lista flote a la izquierda */
   }
   
-  .navbar a:hover {
-    color: #ccc; /* Color del texto de los enlaces al pasar el cursor */
+  nav li a {
+    display: block; /* Hace que cada enlace ocupe toda el área del elemento de lista */
+    color: #333; /* Color del texto de los enlaces */
+    text-align: center; /* Centra el texto dentro de cada enlace */
+    padding: 14px 16px; /* Espacio interno del enlace */
+    text-decoration: none; /* Quita la decoración subrayada de los enlaces */
+  }
+  
+  /* Estilos para los enlaces activos (opcional) */
+  nav li a:hover {
+    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
   }
