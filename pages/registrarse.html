@@ -3,8 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicia sesión</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showRegistrationMessage(event) {
+            event.preventDefault(); 
+            alert("Registrado correctamente!"); 
+        }
+    </script>
 </head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-vector-illustration-of-a-restaurant-menu-design-with-food-and-drinks-image_13914731.png');
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.login-header img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.login-header h2 {
+    font-size: 1.5rem;
+    color: #2a9df4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a9df4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #1c80c1;
+}
+
+.login-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-footer a {
+    font-size: 0.9rem;
+    color: #2a9df4;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.credit {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+
+</style>
+
 <body>
     
     <nav>
@@ -18,6 +135,38 @@
           <li><a href="pages/contactos.html">Contacto</a></li>
         </ul>
       </nav>
+
+      <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/433/433036.png" alt="Login Icon">
+                <h2>Inicia sesión ahora</h2>
+            </div>
+            <form action="#" method="post" onsubmit="showRegistrationMessage(event);">
+                <div class="form-group">
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Recordarme</label>
+                </div>
+                <button type="submit" class="btn">ACCESO</button>
+            </form>
+            <div class="login-footer">
+                <a href="#">¿No tienes una cuenta?</a>
+                <a href="#">¿Se te olvidó tu contraseña?</a>
+            </div>
+            <p class="credit">Sitio de <a
+                    href="https://www.tripadvisor.es/Restaurants-g294476-San_Salvador_San_Salvador_Department.html"
+                    target="_blank">Mejores restaurantes</a></p>
+        </div>
+    </div>
+
 
 </body>
 </html>
