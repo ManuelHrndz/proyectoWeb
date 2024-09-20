@@ -10,6 +10,65 @@
     <link rel="stylesheet" href="css/contactos.css"> 
 </head>
 
+<style>
+.about-us {
+    background-image: url('/images/restaurante.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-content {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #374151;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Media Queries para la responsividad */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .contact-form {
+        width: 40%;
+    }
+    .about-us {
+        width: 60%;
+    }
+}
+
+
+</style>
+
+
 <body class="bg-yellow-50">
     <header class="header">
         <h1 class="header-title">Restaurante El Paraíso</h1>
