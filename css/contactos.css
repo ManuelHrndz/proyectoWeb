@@ -1,0 +1,183 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fef3c7; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #ff6347; 
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    margin-top: 5px;
+    font-size: 1.25rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-form, .about-us {
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto;
+}
+
+.form-title {
+    font-size: 2rem;
+    text-align: center;
+    color: #1f2937;
+}
+
+.form-description {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.875rem;
+    color: #1f2937;
+}
+
+.form-input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #ea580c;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #c2410c;
+}
+
+.social-media-icons {
+    text-align: center;
+}
+
+.icons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.whatsapp {
+    color: #25d366;
+}
+
+.whatsapp:hover {
+    color: #128c7e;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.facebook:hover {
+    color: #145dbf;
+}
+
+.phone {
+    color: #374151;
+}
+
+.phone:hover {
+    color: #111827;
+}
+
+.about-us {
+    background-image: url('/images/restaurante.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.about-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-content {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #374151;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Media Queries para la responsividad */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    }
+    .contact-form {
+        width: 40%;
+    }
+    .about-us {
+        width: 60%;
+    }
+}
