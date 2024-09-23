@@ -34,3 +34,167 @@ body {
   nav li a:hover {
     background-color: #ddd; 
   }
+
+/**/
+.hero-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image-container img {
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho */
+  height: auto;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para centrar */
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 350px; /* Ajusta el ancho según sea necesario */
+}
+
+h1 {
+  color: #333; /* Color del título */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff5733; /* Color de fondo del botón */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #c70000; /* Color al pasar el ratón */
+}
+
+
+/*aa*/
+
+.hero-image-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image-container img {
+  width: 100%; /* Ajusta según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.reservar {
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición vertical del botón */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff5733; /* Cambia el color de fondo según tu diseño */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reservar:hover {
+  background-color: #c70000; /* Cambia el color al pasar el ratón */
+}
+
+
+  /**/
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cambiado a un color más oscuro para mejor legibilidad */
+}
+
+.event-container {
+    background-image: url('https://example.com/imagen-fondo.jpg'); /* Cambia esta URL por la imagen de fondo deseada */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #fff; /* Color del texto del título */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 350px; /* Ajusta el ancho según sea necesario */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Negrita para las etiquetas */
+    color: #333; /* Color de las etiquetas */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borde claro */
+    border-radius: 5px;
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+input:focus {
+    border-color: #ff5733; /* Color del borde al enfocar */
+    outline: none; /* Eliminar el contorno predeterminado */
+}
+
+button {
+    background-color: #ff5733; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em; /* Tamaño de fuente del botón */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #c70000; /* Color al pasar el ratón */
+}
