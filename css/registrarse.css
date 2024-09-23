@@ -34,3 +34,110 @@ body {
   nav li a:hover {
     background-color: #ddd; 
   }
+
+
+  /**/
+
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20231231/pngtree-vector-illustration-of-a-restaurant-menu-design-with-food-and-drinks-image_13914731.png');
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+}
+
+.login-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.login-header img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.login-header h2 {
+    font-size: 1.5rem;
+    color: #2a9df4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #2a9df4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #1c80c1;
+}
+
+.login-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-footer a {
+    font-size: 0.9rem;
+    color: #2a9df4;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.credit {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
