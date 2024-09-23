@@ -1,3 +1,41 @@
+/*Menu*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+    
+  nav {
+    background-color: #f2f2f2;   
+    overflow: hidden;   
+  }
+  
+  nav ul {
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;
+    display: flex;   
+    justify-content: center;   
+  }
+  
+  nav li {
+    float: left;   
+  }
+  
+  nav li a {
+    display: block;   
+    color: #333;   
+    text-align: center;   
+    padding: 14px 16px;   
+    text-decoration: none;   
+  }
+  
+    
+  nav li a:hover {
+    background-color: #ddd; 
+  }
+
 
 body {
     font-family: 'Arial', sans-serif;
