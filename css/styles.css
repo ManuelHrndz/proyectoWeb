@@ -1,37 +1,37 @@
-/* Estilos generales para la página */
+  
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  /* Estilos para la barra de navegación */
+    
   nav {
-    background-color: #f2f2f2; /* Color de fondo de la barra */
-    overflow: hidden; /* Oculta cualquier contenido que exceda el ancho */
+    background-color: #f2f2f2;   
+    overflow: hidden;   
   }
   
   nav ul {
-    list-style-type: none; /* Elimina los marcadores de lista */
+    list-style-type: none;   
     margin: 0;
     padding: 0;
-    display: flex; /* Organiza los elementos de la lista en una fila */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex;   
+    justify-content: center;   
   }
   
   nav li {
-    float: left; /* Hace que cada elemento de la lista flote a la izquierda */
+    float: left;   
   }
   
   nav li a {
-    display: block; /* Hace que cada enlace ocupe toda el área del elemento de lista */
-    color: #333; /* Color del texto de los enlaces */
-    text-align: center; /* Centra el texto dentro de cada enlace */
-    padding: 14px 16px; /* Espacio interno del enlace */
-    text-decoration: none; /* Quita la decoración subrayada de los enlaces */
+    display: block;   
+    color: #333;   
+    text-align: center;   
+    padding: 14px 16px;   
+    text-decoration: none;   
   }
   
-  /* Estilos para los enlaces activos (opcional) */
+    
   nav li a:hover {
-    background-color: #ddd; /* Cambia el color de fondo al pasar el ratón */
+    background-color: #ddd; 
   }
