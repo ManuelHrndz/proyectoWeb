@@ -1,57 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link href="../css/registrarse.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <script>
-        function showRegistrationMessage(event) {
-            event.preventDefault(); 
-            alert("Registrado correctamente!"); 
-        }
-    </script>
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="section-nav">
-        <nav>
-            <ul>
-              <li><a href="../pages/reservaciones.html">Reservaciones</a></li>
-              <li><a href="../pages/promociones.html">Promociones</a></li>
-              <li><a href="../pages/pedidos.html">Pedidos</a></li>
-              <li><a href="../pages/eventos.html">Eventos</a></li>
-              <li><a href="../pages/iniciarSesion.html">Iniciar sesión</a></li>
-              <li><a href="../pages/registrarse.html">Registrarse</a></li>
-              <li><a href="../pages/contactos.html">Contacto</a></li>
-            </ul>
-          </nav>
-    </section>
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
                 <img src="https://cdn-icons-png.flaticon.com/512/433/433036.png" alt="Login Icon">
-                <h2>Inicia sesión ahora</h2>
+                <h2>Regístrate ahora</h2>
             </div>
-            <form action="#" method="post" onsubmit="showRegistrationMessage(event);">
+            
+            <form action="procesar_registro.php" method="post">
                 <div class="form-group">
-                    <label for="username">Username *</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <textarea id="direccion" name="direccion" placeholder="Ingresa tu dirección"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="password">Password *</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu password" required>
                 </div>
-                <div class="form-group">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">Recordarme</label>
-                </div>
-                <button type="submit" class="btn">ACCESO</button>
+                <button type="submit" class="btn">Registrarse</button>
             </form>
+
             <div class="login-footer">
-                <a href="#">¿No tienes una cuenta?</a>
-                <a href="#">¿Se te olvidó tu contraseña?</a>
+                <a href="restablecer_contraseña.php">¿Olvidaste tu contraseña?</a>
             </div>
-           </div>
+        </div>
     </div>
 </body>
 </html>
